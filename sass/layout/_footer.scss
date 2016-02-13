@@ -1,0 +1,22 @@
+footer {
+    height: $footer-height;
+    margin: $footer-margin;
+    padding: $footer-padding;
+    border-top: $footer-top-border;
+    bottom: 0;
+    font-size: $footer-font-size;
+    background: transparent;
+    color: $lighter-blue;
+    address {
+        width: 50%;
+        float: left;
+        text-align: left;
+        font-style: normal;
+        font-weight: 600;
+    }
+    div#counter {
+        width: 50%;
+        float: right;
+        text-align: right;
+    }
+}

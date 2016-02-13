@@ -1,0 +1,80 @@
+(function ()
+{
+    "use strict";
+    var slides = [];
+    var active, ctr;
+    init();
+    function keyEvents(e)
+    {
+        var PREV_PAGE = 33;
+        var NEXT_PAGE = 34;
+        var ARROW_LEFT = 37;
+        var ARROW_RIGHT = 39;
+        if(e.keyCode === ARROW_RIGHT || e.keyCode === NEXT_PAGE)
+        {
+            location.hash = Math.min(slides.length-1, active+1);
+        }
+        else if(e.keyCode === ARROW_LEFT || e.keyCode === PREV_PAGE)
+        {
+            location.hash = Math.max(0, active-1);
+        }
+    }
+    function hashChange(e)
+    {
+        active = checkHash(e.newURL);
+        slides.forEach(function (slide, i)
+        {
+            if(i === active)
+            {
+                slide.style.display = "block";
+            }
+            else
+            {
+                slide.style.display = "none";
+            }
+        });
+        ctr.textContent = active + 1;
+        location.hash = active;
+    }
+    function load()
+    {
+        active = checkHash(location.toString());
+        slides.forEach(function (slide, i)
+        {
+            slide.id = i;
+            if(i === active)
+            {
+                slide.style.display = "block";
+            }
+            else
+            {
+                slide.style.display = "none";
+            }
+        });
+        document.getElementById("slides_total").textContent = slides.length;
+        ctr = document.getElementById("slide_counter");
+        ctr.textContent = active + 1;
+        location.hash = active;
+    }
+    function init()
+    {
+        slides = Array.prototype.slice.call(
+            document.querySelectorAll("article > section"));
+        slides.unshift(document.querySelectorAll("article > header")[0]);
+        window.onload = load;
+        window.onhashchange = hashChange;
+        window.onkeyup = keyEvents;
+        //window.onkeydown = keyEvents;
+        //window.onkeypress = keyEvents;
+    }
+    function checkHash(url)
+    {
+        var hash = new URL(url).hash;
+        var h = hash ? parseInt(hash.substring(1)) : 0;
+        if(Number.isNaN(h) || h < 0 || h >= slides.length)
+        {
+            h = 0;
+        }
+        return h;
+    }
+})();

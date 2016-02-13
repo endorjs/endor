@@ -1,0 +1,29 @@
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    height: $presentation-height;
+    width: $presentation-width;
+    margin: $presentation-margin;
+    padding: $presentation-padding;
+    background: $darkest-blue;
+    color: #fff;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    font-style: normal;
+    font-family: "Open Sans", arial, sans-serif;
+}
+
+article {
+    background: #fff;
+    color: $darkest-blue;
+    border-radius: 1rem;
+}
+
+pre, code, kbd, var {
+    font-size: $code-font-size;
+    font-weight: $base-font-weight;
+    font-style: normal;
+    font-family: "Source Code Pro", monospace;
+}

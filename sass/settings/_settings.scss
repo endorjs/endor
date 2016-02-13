@@ -1,0 +1,42 @@
+// Base font
+$base-font-size: 16px;
+$base-font-weight: 400;
+
+// Colors. Thema: Corporate Blues
+// URL: http://adobe.ly/1AcUKv7
+$darkest-blue: #082136;
+$darker-blue: #00294D;
+$blue: #004B8D;
+$lighter-blue: #0068C4;
+$lightest-blue: #2998FF;
+
+// Sizes
+$presentation-width: 100%;
+$presentation-height: 100vh;
+$presentation-margin: 0;
+$presentation-padding: 5vh 5%;
+
+// Slides
+$slide-height: 85vh;
+$slide-margin: 0;
+$slide-padding: 0 3rem;
+$slide-font-size: 1.75 * $base-font-size;
+$slide-h1-font-size: 4 * $base-font-size;
+$slide-h2-font-size: 3 * $base-font-size;
+$slide-title-border: 1px solid $darker-blue;
+
+// Code
+$code-font-size: 1.75 * $base-font-size;
+
+// Footer
+$footer-height: 5vh;
+$footer-margin: 0;
+$footer-padding: 0 2rem 0 2rem;
+$footer-font-size: 1.2 * $base-font-size;
+$footer-top-border: 1px dotted $darkest-blue;
+
+// Screen-sizes
+$screen-sm:  544px; /* 34em */
+$screen-md:  768px; /* 48em */
+$screen-lg:  992px; /* 62em */
+$screen-xl: 1200px; /* 75em */
