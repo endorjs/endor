@@ -34,10 +34,15 @@ pre, code, kbd, var {
 
 header, section {
   margin: 0;
-  padding: 0 3rem;
   min-height: 85vh;
   font-size: 28px;
   transition-property: background-color; }
+
+header {
+  padding: 5rem; }
+
+section {
+  padding: 1rem 3rem; }
 
 h1 {
   font-size: 64px;

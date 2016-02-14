@@ -29,11 +29,14 @@ $presentation-padding: 5vh 5%;
 // Slides
 $slide-height: 85vh;
 $slide-margin: 0;
-$slide-padding: 0 3rem;
+$slide-padding: 1rem 3rem;
 $slide-font-size: 1.75 * $base-font-size;
 $slide-h1-font-size: 4 * $base-font-size;
 $slide-h2-font-size: 3 * $base-font-size;
 $slide-title-border: 1px solid $darker-blue;
+
+// Title slide
+$title-slide-padding: 5rem;
 
 // Code
 $code-font-size: 1.75 * $base-font-size;

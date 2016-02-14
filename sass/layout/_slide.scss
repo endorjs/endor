@@ -1,12 +1,16 @@
 header, section {
     margin: $slide-margin;
-    padding: $slide-padding;
     min-height: $slide-height;
     font-size: $slide-font-size;
     transition-property: background-color;
 }
 
+header {
+    padding: $title-slide-padding;
+}
+
 section {
+    padding: $slide-padding;
 }
 
 h1 {
