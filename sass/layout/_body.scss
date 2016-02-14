@@ -25,5 +25,5 @@ pre, code, kbd, var {
     font-size: $code-font-size;
     font-weight: $base-font-weight;
     font-style: normal;
-    font-family: "Source Code Pro", monospace;
+    font-family: $base-font-type-code, courier, monospace;
 }

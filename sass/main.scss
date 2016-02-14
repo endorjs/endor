@@ -1,8 +1,11 @@
 // Settings
-@import "settings/fonts";
 @import "settings/settings";
+@import "settings/fonts";
 
 // Layout
 @import "layout/body";
 @import "layout/slide";
 @import "layout/footer";
+
+// Code highlight
+@import url($code-theme);
