@@ -21,6 +21,17 @@ article {
     border-radius: 1rem;
 }
 
+blockquote {
+    padding: 0.2rem 1rem 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    border-left: 0.25rem solid #eceeef;
+}
+
+p {
+    margin: 0 0 0.25rem 0;
+}
+
 pre, code, kbd, var {
     font-size: $code-font-size;
     font-weight: $base-font-weight;
