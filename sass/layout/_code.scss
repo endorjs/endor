@@ -1,0 +1,9 @@
+pre, code, kbd, var {
+    font-size: $code-font-size;
+    font-weight: $base-font-weight;
+    font-style: normal;
+    font-family: $base-font-type-code, courier, monospace;
+}
+
+// Code highlight
+@import url($code-theme);

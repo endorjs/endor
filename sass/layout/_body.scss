@@ -21,20 +21,39 @@ article {
     border-radius: 1rem;
 }
 
-blockquote {
-    padding: 0.2rem 1rem 0.5rem 1rem;
-    margin-bottom: 1rem;
-    font-style: italic;
-    border-left: 0.25rem solid #eceeef;
-}
-
 p {
     margin: 0 0 0.25rem 0;
 }
 
-pre, code, kbd, var {
-    font-size: $code-font-size;
-    font-weight: $base-font-weight;
-    font-style: normal;
-    font-family: $base-font-type-code, courier, monospace;
+blockquote {
+    position: relative;
+    padding: 0 3rem 0 3.5rem;
+    margin: 0 0 1rem 0;
+    font-style: italic;
+    border-right: 0.25rem solid $lightest-blue;
+    border-bottom: 0.25rem solid $lightest-blue;
+    border-bottom-right-radius: 3rem;
+    background-color: $grey;
+    color: inherit;
+    cite {
+        display: block;
+        text-align: right;
+        background-color: transparent;
+        font-weight: 600;
+        color: $lightest-blue;
+    }
+    cite:before {
+        content: "\2014 \2009";
+    }
+}
+
+blockquote:before {
+    display: block;
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    content: open-quote;
+    font-size: 5rem;
+    background-color: transparent;
+    color: $lightest-blue;
 }
