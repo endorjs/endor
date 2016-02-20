@@ -30,3 +30,49 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
     color: $darker-blue;
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    padding: 0 0 0 2rem;
+    position: relative;
+}
+
+ul > li:before {
+    position: absolute;
+    top: 0.6rem;
+    left: 0;
+    content: "\f0c8";
+    color: $lighter-blue;
+    font-family: "FontAwesome", sans-serif;
+    font-size: 1.25rem;
+}
+
+ul > li > ul > li:before {
+    position: absolute;
+    top: 0.6rem;
+    left: 0;
+    content: "\f10c";
+    color: $lighter-blue;
+    font-family: "FontAwesome", sans-serif;
+    font-size: 1.2rem;
+}
+
+section {
+    .col-left {
+        width: 50%;
+        float: left;
+        margin: 0;
+        padding: 0 0.5rem 0 0;
+    }
+    .col-right {
+        width: 50%;
+        float: right;
+        margin: 0;
+        padding: 0 0 0 0.5rem;
+    }
+}

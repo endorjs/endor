@@ -85,6 +85,44 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   color: #00294d; }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  padding: 0 0 0 2rem;
+  position: relative; }
+
+ul > li:before {
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+  content: "\f0c8";
+  color: #0068c4;
+  font-family: "FontAwesome", sans-serif;
+  font-size: 1.25rem; }
+
+ul > li > ul > li:before {
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+  content: "\f10c";
+  color: #0068c4;
+  font-family: "FontAwesome", sans-serif;
+  font-size: 1.2rem; }
+
+section .col-left {
+  width: 50%;
+  float: left;
+  margin: 0;
+  padding: 0 0.5rem 0 0; }
+section .col-right {
+  width: 50%;
+  float: right;
+  margin: 0;
+  padding: 0 0 0 0.5rem; }
+
 pre, code, kbd, var {
   font-size: 28px;
   font-weight: 400;

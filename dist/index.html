@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
     <script type="application/javascript" src="highlight/highlight.pack.js"></script>
 </head>
 <body>
@@ -19,26 +19,31 @@
         <section>
             <h2>(Simple list) Slide #2</h2>
             <ul>
-                <li>Bla</li>
+                <li>Bla
+                    <ul>
+                        <li>Bla.1</li>
+                        <li>Bla.2</li>
+                    </ul>
+                </li>
                 <li>Ble</li>
             </ul>
         </section>
         <section>
-            <h2>(Sample code) Slide #3</h2>
-            <pre class="html">
-                <code>&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;Title&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;article&gt;
-        &lt;!-- ... --&gt;
-    &lt;/article&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code>
-            </pre>
+            <h2>(Double column) Slide #3</h2>
+            <div class="col-left">
+                <h3>Left column</h3>
+                <ul>
+                    <li>Bla</li>
+                    <li>Ble</li>
+                </ul>
+            </div>
+            <div class="col-right">
+                <h3>Right column</h3>
+                <ul>
+                    <li>Bla</li>
+                    <li>Ble</li>
+                </ul>
+            </div>
         </section>
         <section>
             <h2>(Blockquote) Slide #4</h2>
@@ -53,6 +58,23 @@
                     underweaaar daa.</p>
                 <cite>Minions</cite>
             </blockquote>
+        </section>
+        <section>
+            <h2>(Sample code) Slide #5</h2>
+            <pre class="html">
+                <code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;article&gt;
+        &lt;!-- ... --&gt;
+    &lt;/article&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+            </pre>
         </section>
         <footer>
             <address>
