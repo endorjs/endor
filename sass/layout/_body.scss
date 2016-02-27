@@ -57,3 +57,11 @@ blockquote:before {
     background-color: transparent;
     color: $lightest-blue;
 }
+
+abbr {
+    border-bottom: 1px dotted $darker-blue;
+}
+
+abbr[title] {
+    cursor: help;
+}

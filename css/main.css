@@ -58,6 +58,12 @@ blockquote:before {
   background-color: transparent;
   color: #2998ff; }
 
+abbr {
+  border-bottom: 1px dotted #00294d; }
+
+abbr[title] {
+  cursor: help; }
+
 header, section {
   margin: 0;
   min-height: 82vh;
