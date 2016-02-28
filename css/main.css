@@ -133,6 +133,7 @@ figure img {
   width: 100%;
   height: auto;
   max-height: 75vh;
+  text-align: center;
   overflow: scroll; }
 figure figcaption {
   margin-top: 1rem;
