@@ -95,10 +95,11 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-
-ul li {
-  padding: 0 0 0 2rem;
-  position: relative; }
+  ul li {
+    padding: 0 0 0 2rem;
+    position: relative; }
+    ul li ul {
+      font-size: 87.5%; }
 
 ul > li:before {
   position: absolute;
