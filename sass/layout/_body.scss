@@ -58,10 +58,10 @@ blockquote:before {
     color: $lightest-blue;
 }
 
-abbr {
+abbr, acronym {
     border-bottom: 1px dotted $darker-blue;
 }
 
-abbr[title] {
+abbr[title], acronym[title] {
     cursor: help;
 }
