@@ -78,11 +78,11 @@ section {
 }
 
 figure {
+    text-align: center;
     img {
         width: 100%;
         height: auto;
         max-height: .75 * $presentation-height;
-        text-align: center;
         overflow: scroll;
     }
     figcaption {
