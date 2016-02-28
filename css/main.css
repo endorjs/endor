@@ -129,6 +129,14 @@ section .col-right {
   float: right;
   margin: 0;
   padding: 0 0 0 0.5rem; }
+section .valign {
+  position: relative;
+  transform: translateY(20.5vh);
+  width: 50%;
+  margin: auto;
+  padding: 1rem 2rem;
+  background-color: lightgrey;
+  border-bottom-right-radius: 2rem; }
 
 figure {
   text-align: center; }

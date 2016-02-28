@@ -77,6 +77,15 @@ section {
         margin: 0;
         padding: 0 0 0 0.5rem;
     }
+    .valign {
+        position: relative;
+        transform: translateY(.25 * $slide-height);
+        width: 50%;
+        margin: auto;
+        padding: 1rem 2rem;
+        background-color: lightgrey;
+        border-bottom-right-radius: 2rem;
+    }
 }
 
 figure {
