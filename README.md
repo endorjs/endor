@@ -93,3 +93,16 @@ We are not seeking for compatibility with old browser versions,
 especially with those from Microsoft Internet Explorer. The
 **endor.js** framework should work with any recent release of a
 modern browser.
+
+## License
+
+See: [LICENSE](./LICENSE)
+
+For third-party dependencies integrated in our code, see the table below.
+
+| Product | URL | License type |
+| ------- | --- | ------------ |
+| hightlight.js | https://highlightjs.org/ | BSD |
+| Font Awesome | https://fortawesome.github.io/Font-Awesome/ | MIT |
+| Open Sans (Google Font) | https://www.google.com/fonts/ | Apache License, version 2.0 |
+| Source Code Pro (Google Font) | https://www.google.com/fonts/ | SIL Open Font License, 1.1 |

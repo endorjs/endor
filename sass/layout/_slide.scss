@@ -15,17 +15,18 @@ section {
 
 h1 {
     font-size: $slide-h1-font-size;
+    font-weight: $slide-h1-font-weight;
 }
 
 h2 {
     font-size: $slide-h2-font-size;
+    font-weight: $slide-h2-font-weight;
     border-bottom: $slide-title-border;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1rem 0;
     padding: 0;
-    font-weight: $base-font-weight;
     font-style: normal;
     background: transparent;
     color: $darker-blue;
