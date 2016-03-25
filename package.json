@@ -1,24 +1,24 @@
 {
+  "name": "endor.js",
+  "description": "endor.js, the simplest and fastest HTML5 slides framework.",
+  "version": "0.4.1",
+  "author": {
     "name": "endor.js",
-    "description": "endor.js, the simplest and fastest HTML5 slides framework.",
-    "version": "0.4.0",
-    "author": {
-        "name": "endor.js",
-        "url": "https://github.com/endorjs"
+    "url": "https://github.com/endorjs"
+  },
+  "contributors": [
+    {
+      "name": "Darth CAV",
+      "url": "https://github.com/darthcav"
     },
-    "contributors": [
-        {
-            "name": "Darth CAV",
-            "url": "https://github.com/darthcav"
-        },
-        {
-            "name": "cleancoderocker",
-            "url": "https://github.com/cleancoderocker"
-        }
-    ],
-    "license": "Apache-2.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/endorjs/endor"
+    {
+      "name": "cleancoderocker",
+      "url": "https://github.com/cleancoderocker"
     }
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/endorjs/endor"
+  }
 }
