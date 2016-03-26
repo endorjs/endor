@@ -26,9 +26,11 @@ Its main characteristics are:
 There are different ways to download endor.js:
 
 + From **npm**:
+
     ```console
     $ npm install [-g] endor.js
     ```
+
   You can find all what you need to start your presentation under the `dist`
   directory.
 + From [GitHub as a direct download](https://github.com/endorjs/endor/archive/master.zip).
