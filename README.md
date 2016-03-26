@@ -1,24 +1,39 @@
-# endor.js, the simplest and fastest HTML5 slides framework
+# endor.js: the simplest and fastest HTML5 presentation framework
 
-We were tired of bloated web presentation frameworks built upon
-many JavaScript frameworks such as jQuery. We wanted to build
+We were tired of bloated HTML presentation frameworks relying upon
+many «obsolete» JavaScript frameworks such as jQuery that can be easily
+replaced by the standard
+[Web APIs](https://developer.mozilla.org/en-US/docs/Web/API).
+We wanted to build
 something simpler and faster, taking into account the simplicity
-of the HTML5 web APIs and CSS3. With that objective in mind,
+of the HTML5 Web APIs and CSS3. With that objective in mind,
 **endor.js** was born!
 
 Its main characteristics are:
 
-+ Usage of the semantic structure from the HTML5 elements.
++ Use of the semantic structure from the HTML5 elements.
   No need to tag the presentation slides with the
   `class="slide"` attribute (see usage section).
 + Theme creation via structured [Sass](http://sass-lang.com/)
   variables.
 + Minimum set of external dependencies (at the moment, our
   framework depends only on [hightlight.js](https://highlightjs.org/)
-  for code highlighting)
-+ Fonts via [Google Fonts](https://www.google.com/fonts)
+  for code highlighting).
++ Fonts via [Google Fonts](https://www.google.com/fonts).
 
 ## Download
+
+There are different ways to download endor.js:
+
++ From **npm**:
+    ```console
+    $ npm install [-g] endor.js
+    ```
+  You can find all what you need to start your presentation under the `dist`
+  directory.
++ From [GitHub as a direct download](https://github.com/endorjs/endor/archive/master.zip).
++ Copy the structure of the [index_cdn.html](https://cdn.rawgit.com/endorjs/endor/0.4.2/dist/index_cdn.html)
+  file, which links the corresponding dependencies from the CDN at [RawGit](https://rawgit.com/).
 
 ## Usage
 

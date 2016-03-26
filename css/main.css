@@ -396,6 +396,9 @@ pre, code, kbd, var {
   font-style: normal;
   font-family: "Source Code Pro", courier, monospace; }
 
+code.hljs {
+  padding: 0 0 0.5rem 0; }
+
 footer {
   height: 8vh;
   margin: 0;
