@@ -396,7 +396,7 @@ pre, code, kbd, var {
   font-style: normal;
   font-family: "Source Code Pro", courier, monospace; }
 
-p code, p kbd, p var {
+p code, p kbd, p var, li code, li kbd, li var {
   background-color: #2998ff; }
 
 code.hljs {
