@@ -8,6 +8,12 @@ pre, code, kbd, var {
     font-family: $base-font-type-code, courier, monospace;
 }
 
+p {
+    code, kbd, var {
+        background-color: $lightest-blue;
+    }
+}
+
 code.hljs {
     padding: 0 0 0.5rem 0;
 }

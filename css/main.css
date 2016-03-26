@@ -396,6 +396,9 @@ pre, code, kbd, var {
   font-style: normal;
   font-family: "Source Code Pro", courier, monospace; }
 
+p code, p kbd, p var {
+  background-color: #2998ff; }
+
 code.hljs {
   padding: 0 0 0.5rem 0; }
 
