@@ -98,9 +98,8 @@ These are the features we are trying to implement in
 the coming releases.
 
 + Overlay with the overview of the existing slides
-  (table of contents) with the
-  capability to select one
-+ Slide transitions via CSS
+  (table of contents) with the capability to select one
++ Configurable slide transitions
 + Implementation of mouse and touch events
 + Second screen presentation and speaker notes
 

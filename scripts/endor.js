@@ -22,35 +22,18 @@
     function hashChange(e)
     {
         active = checkHash(e.newURL);
-        slides.forEach(function (slide, i)
-        {
-            if(i === active)
-            {
-                slide.style.display = "block";
-            }
-            else
-            {
-                slide.style.display = "none";
-            }
-        });
+        changeOpacity();
         ctr.textContent = active + 1;
         location.hash = active;
     }
     function load()
     {
         active = checkHash(location.toString());
-        slides.forEach(function (slide, i)
+        slides.forEach(function (slide)
         {
-            slide.id = i;
-            if(i === active)
-            {
-                slide.style.display = "block";
-            }
-            else
-            {
-                slide.style.display = "none";
-            }
+            slide.addEventListener("transitionend", changeDisplay);
         });
+        changeOpacity();
         document.getElementById("slides_total").textContent = slides.length;
         ctr = document.getElementById("slide_counter");
         ctr.textContent = active + 1;
@@ -76,5 +59,38 @@
             h = 0;
         }
         return h;
+    }
+    function changeDisplay()
+    {
+        slides.forEach(function (slide, i)
+        {
+            slide.id = i;
+            if(i === active)
+            {
+                slide.style.display = "block";
+                slide.style.removeProperty("opacity");
+                slide.style.removeProperty("transition");
+            }
+            else
+            {
+                slide.style.display = "none";
+            }
+        });
+    }
+    function changeOpacity()
+    {
+        slides.forEach(function (slide, i)
+        {
+            slide.id = i;
+            if(i === active)
+            {
+                slide.style.opacity = 1;
+            }
+            else
+            {
+                slide.style.opacity = 0;
+                slide.style.transition = "opacity 1s linear";
+            }
+        });
     }
 })();
