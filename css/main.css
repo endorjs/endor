@@ -267,20 +267,19 @@ p {
 
 blockquote {
   position: relative;
-  padding: 0 3rem 0 3.5rem;
+  padding: 1rem 3rem 1rem 3.5rem;
   margin: 0 0 1rem 0;
   font-style: italic;
-  border-right: 0.25rem solid #2998ff;
-  border-bottom: 0.25rem solid #2998ff;
   border-bottom-right-radius: 3rem;
-  background-color: #dcdcdc;
+  box-shadow: 1rem 1rem 0.5rem 0 rgba(41, 152, 255, 0.5);
+  background-color: #b7b7b7;
   color: inherit; }
   blockquote cite {
     display: block;
     text-align: right;
     background-color: transparent;
     font-weight: 600;
-    color: #2998ff; }
+    color: #004b8d; }
   blockquote cite:before {
     content: "\2014 \2009"; }
 
@@ -292,7 +291,7 @@ blockquote:before {
   content: open-quote;
   font-size: 5rem;
   background-color: transparent;
-  color: #2998ff; }
+  color: #004b8d; }
 
 abbr, acronym {
   border-bottom: 1px dotted #00294d; }
@@ -397,9 +396,12 @@ pre, code, kbd, var {
   font-family: "Source Code Pro", courier, monospace; }
 
 p code, p kbd, p var, li code, li kbd, li var {
-  background-color: #2998ff; }
+  background-color: #b7b7b7;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; }
 
 code.hljs {
+  margin: 0.5rem;
   padding: 0 0 0.5rem 0; }
 
 footer {

@@ -10,10 +10,13 @@ pre, code, kbd, var {
 
 p, li {
     code, kbd, var {
-        background-color: $lightest-blue;
+        background-color: $code-background;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
     }
 }
 
 code.hljs {
+    margin: 0.5rem;
     padding: 0 0 0.5rem 0;
 }
