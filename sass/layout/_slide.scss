@@ -1,8 +1,10 @@
 header, section {
     margin: $slide-margin;
     min-height: $slide-height;
+    max-height: $slide-height;
     font-size: $slide-font-size;
     transition-property: background-color;
+    overflow: auto;
 }
 
 header {
@@ -92,7 +94,7 @@ section {
 figure {
     text-align: center;
     img {
-        width: 100%;
+        width: auto;
         height: auto;
         max-height: .75 * $presentation-height;
         overflow: scroll;

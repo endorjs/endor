@@ -302,8 +302,10 @@ abbr[title], acronym[title] {
 header, section {
   margin: 0;
   min-height: 82vh;
+  max-height: 82vh;
   font-size: 28px;
-  transition-property: background-color; }
+  transition-property: background-color;
+  overflow: auto; }
 
 header {
   padding: 5rem; }
@@ -377,7 +379,7 @@ section .valign {
 figure {
   text-align: center; }
   figure img {
-    width: 100%;
+    width: auto;
     height: auto;
     max-height: 75vh;
     overflow: scroll; }
