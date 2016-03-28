@@ -40,9 +40,9 @@ p, ol, ul, blockquote {
 
 ol {
     padding: 0;
-    list-style-position: inside;
+    list-style-position: outside;
     li {
-        padding: 0 0 0.5rem 0;
+        padding-bottom: 0.5rem;
         ol, ul {
             font-size: 14/16 * 100%;
             margin-bottom: 0;
