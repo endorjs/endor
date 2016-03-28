@@ -303,6 +303,12 @@ header, section {
   font-size: 28px;
   transition-property: background-color;
   overflow: auto; }
+  header .left, section .left {
+    text-align: left; }
+  header .right, section .right {
+    text-align: right; }
+  header .center, section .center {
+    text-align: center; }
 
 header {
   padding: 5rem; }
@@ -385,12 +391,6 @@ section .valign {
   padding: 1rem 2rem;
   background-color: lightgrey;
   border-bottom-right-radius: 2rem; }
-section .left {
-  text-align: left; }
-section .right {
-  text-align: right; }
-section .center {
-  text-align: center; }
 
 figure {
   text-align: center; }

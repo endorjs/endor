@@ -5,6 +5,15 @@ header, section {
     font-size: $slide-font-size;
     transition-property: background-color;
     overflow: auto;
+    .left {
+        text-align: left;
+    }
+    .right {
+        text-align: right;
+    }
+    .center {
+        text-align: center;
+    }
 }
 
 header {
@@ -105,15 +114,6 @@ section {
         padding: 1rem 2rem;
         background-color: lightgrey;
         border-bottom-right-radius: 2rem;
-    }
-    .left {
-        text-align: left;
-    }
-    .right {
-        text-align: right;
-    }
-    .center {
-        text-align: center;
     }
 }
 
