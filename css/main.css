@@ -331,11 +331,12 @@ p, ol, ul, blockquote {
 
 ol {
   padding: 0;
-  list-style-position: inside; }
+  list-style-position: outside; }
   ol li {
-    padding: 0 0 0.5rem 0; }
+    padding-bottom: 0.5rem; }
     ol li ol, ol li ul {
       font-size: 87.5%;
+      margin-left: 2rem;
       margin-bottom: 0; }
 
 ul {
