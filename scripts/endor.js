@@ -9,12 +9,14 @@
         var PREV_PAGE = 33;
         var NEXT_PAGE = 34;
         var ARROW_LEFT = 37;
+        var ARROW_UP = 38;
         var ARROW_RIGHT = 39;
-        if(e.keyCode === ARROW_RIGHT || e.keyCode === NEXT_PAGE)
+        var ARROW_DOWN = 40;
+        if(e.keyCode === ARROW_RIGHT || e.keyCode === ARROW_DOWN || e.keyCode === NEXT_PAGE)
         {
             location.hash = Math.min(slides.length-1, active+1);
         }
-        else if(e.keyCode === ARROW_LEFT || e.keyCode === PREV_PAGE)
+        else if(e.keyCode === ARROW_LEFT || e.keyCode === ARROW_UP || e.keyCode === PREV_PAGE)
         {
             location.hash = Math.max(0, active-1);
         }

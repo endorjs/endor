@@ -89,6 +89,15 @@ section {
         background-color: lightgrey;
         border-bottom-right-radius: 2rem;
     }
+    .left {
+        text-align: left;
+    }
+    .right {
+        text-align: right;
+    }
+    .center {
+        text-align: center;
+    }
 }
 
 figure {
@@ -97,11 +106,11 @@ figure {
         width: auto;
         height: auto;
         max-height: .75 * $presentation-height;
-        overflow: scroll;
+        overflow: auto;
     }
     figcaption {
         margin-top: 1rem;
-        text-align: center;
+        text-align: right;
         font-size: 2/3;
         font-style: italic;
     }

@@ -375,6 +375,12 @@ section .valign {
   padding: 1rem 2rem;
   background-color: lightgrey;
   border-bottom-right-radius: 2rem; }
+section .left {
+  text-align: left; }
+section .right {
+  text-align: right; }
+section .center {
+  text-align: center; }
 
 figure {
   text-align: center; }
@@ -382,10 +388,10 @@ figure {
     width: auto;
     height: auto;
     max-height: 75vh;
-    overflow: scroll; }
+    overflow: auto; }
   figure figcaption {
     margin-top: 1rem;
-    text-align: center;
+    text-align: right;
     font-size: 2/3;
     font-style: italic; }
   figure figcaption:before {
