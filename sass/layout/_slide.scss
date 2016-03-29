@@ -3,8 +3,28 @@ header, section {
     min-height: $slide-height;
     max-height: $slide-height;
     font-size: $slide-font-size;
-    transition-property: background-color;
     overflow: auto;
+    .col-left {
+        width: 50%;
+        float: left;
+        margin: 0;
+        padding: 0 0.5rem 0 0;
+    }
+    .col-right {
+        width: 50%;
+        float: right;
+        margin: 0;
+        padding: 0 0 0 0.5rem;
+    }
+    .valign {
+        position: relative;
+        transform: translateY(.25 * $slide-height);
+        width: 50%;
+        margin: auto;
+        padding: 1rem 2rem;
+        background-color: lightgrey;
+        border-bottom-right-radius: 2rem;
+    }
     .left {
         text-align: left;
     }
@@ -48,14 +68,26 @@ p, ol, ul, blockquote {
 }
 
 ol {
-    padding: 0;
-    list-style-position: inside;
-    li {
+    list-style-position: outside;
+    padding-left: 2rem;
+    > li {
         padding-bottom: 0.5rem;
-        ol, ul {
+        ul {
             font-size: 14/16 * 100%;
-            margin-left: 2rem;
+            margin-left: 0;
             margin-bottom: 0;
+            > li {
+                padding: 0 0 0.5rem 2rem;
+                position: relative;
+            }
+        }
+        ol {
+            font-size: 14/16 * 100%;
+            margin-left: 0;
+            margin-bottom: 0;
+            > li {
+                list-style-type: lower-alpha;
+            }
         }
     }
 }
@@ -64,12 +96,15 @@ ul {
     list-style: none;
     list-style-position: inside;
     padding: 0;
-    li {
+    > li {
         padding: 0 0 0.5rem 2rem;
         position: relative;
         ul, ol {
             font-size: 14/16 * 100%;
             margin-bottom: 0;
+        }
+        ol {
+            padding-left: 2rem;
         }
     }
 }
@@ -92,30 +127,6 @@ ul > li > ul > li:before {
     color: $lighter-blue;
     font-family: "FontAwesome", sans-serif;
     font-size: 1.2rem;
-}
-
-section {
-    .col-left {
-        width: 50%;
-        float: left;
-        margin: 0;
-        padding: 0 0.5rem 0 0;
-    }
-    .col-right {
-        width: 50%;
-        float: right;
-        margin: 0;
-        padding: 0 0 0 0.5rem;
-    }
-    .valign {
-        position: relative;
-        transform: translateY(.25 * $slide-height);
-        width: 50%;
-        margin: auto;
-        padding: 1rem 2rem;
-        background-color: lightgrey;
-        border-bottom-right-radius: 2rem;
-    }
 }
 
 figure {

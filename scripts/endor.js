@@ -24,7 +24,7 @@
     function hashChange(e)
     {
         active = checkHash(e.newURL);
-        changeOpacity();
+        toggleOpacity();
         ctr.textContent = active + 1;
         location.hash = active;
     }
@@ -33,9 +33,9 @@
         active = checkHash(location.toString());
         slides.forEach(function (slide)
         {
-            slide.addEventListener("transitionend", changeDisplay);
+            slide.addEventListener("transitionend", toggleDisplay);
         });
-        changeOpacity();
+        toggleOpacity();
         document.getElementById("slides_total").textContent = slides.length;
         ctr = document.getElementById("slide_counter");
         ctr.textContent = active + 1;
@@ -62,7 +62,7 @@
         }
         return h;
     }
-    function changeDisplay()
+    function toggleDisplay()
     {
         slides.forEach(function (slide, i)
         {
@@ -79,7 +79,7 @@
             }
         });
     }
-    function changeOpacity()
+    function toggleOpacity()
     {
         slides.forEach(function (slide, i)
         {
