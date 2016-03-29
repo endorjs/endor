@@ -65,7 +65,7 @@ heading. That will be the front page of your presentation. All
 the `section` elements within the `article` will be presented as
 slides. Every `section` should contain an `h2` heading.
 
-The footer section within the article contains the running footer for the
+The `footer` section within the `article` contains the running footer for the
 presentation, including the slides counter. Just replace the copyright
 information with your data.
 
