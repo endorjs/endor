@@ -8,8 +8,9 @@ pre, code, kbd, var {
     font-family: $base-font-type-code, courier, monospace;
 }
 
-p, li {
+h1, h2, h3, h4, h5, h6, p, li {
     code, kbd, var {
+        font-size: inherit;
         background-color: $code-background;
         padding-left: 0.25rem;
         padding-right: 0.25rem;

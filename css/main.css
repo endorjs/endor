@@ -423,7 +423,8 @@ pre, code, kbd, var {
   font-style: normal;
   font-family: "Source Code Pro", courier, monospace; }
 
-p code, p kbd, p var, li code, li kbd, li var {
+h1 code, h1 kbd, h1 var, h2 code, h2 kbd, h2 var, h3 code, h3 kbd, h3 var, h4 code, h4 kbd, h4 var, h5 code, h5 kbd, h5 var, h6 code, h6 kbd, h6 var, p code, p kbd, p var, li code, li kbd, li var {
+  font-size: inherit;
   background-color: #b7b7b7;
   padding-left: 0.25rem;
   padding-right: 0.25rem; }
