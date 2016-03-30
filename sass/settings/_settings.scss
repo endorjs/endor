@@ -5,8 +5,9 @@ $darker-blue: #00294d;
 $blue: #004b8d;
 $lighter-blue: #0068c4;
 $lightest-blue: #2998ff;
-$code-background: #b7b7b7;
-$blockquote-background: #b7b7b7;
+$theme-grey: #b7b7b7;
+$code-background: $theme-grey;
+$blockquote-background: $theme-grey;
 
 // Base font
 $base-font-size: 16px;

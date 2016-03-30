@@ -1,49 +1,3 @@
-header, section {
-    margin: $slide-margin;
-    min-height: $slide-height;
-    max-height: $slide-height;
-    font-size: $slide-font-size;
-    overflow: auto;
-    .col-left {
-        width: 50%;
-        float: left;
-        margin: 0;
-        padding: 0 0.5rem 0 0;
-    }
-    .col-right {
-        width: 50%;
-        float: right;
-        margin: 0;
-        padding: 0 0 0 0.5rem;
-    }
-    .valign {
-        position: relative;
-        transform: translateY(.25 * $slide-height);
-        width: 50%;
-        margin: auto;
-        padding: 1rem 2rem;
-        background-color: lightgrey;
-        border-bottom-right-radius: 2rem;
-    }
-    .left {
-        text-align: left;
-    }
-    .right {
-        text-align: right;
-    }
-    .center {
-        text-align: center;
-    }
-}
-
-header {
-    padding: $title-slide-padding;
-}
-
-section {
-    padding: $slide-padding;
-}
-
 h1 {
     font-size: $slide-h1-font-size;
     font-weight: $slide-h1-font-weight;
@@ -63,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     color: $blue;
 }
 
-p, ol, ul, blockquote {
+p, ol, ul, figure {
     margin: 0 0 1rem 0;
 }
 
@@ -134,7 +88,7 @@ figure {
     img {
         width: auto;
         height: auto;
-        max-height: .75 * $presentation-height;
+        max-width: 100%;
         overflow: auto;
     }
     figcaption {
@@ -146,4 +100,44 @@ figure {
     figcaption:before {
         content: "\2014 \2009";
     }
+}
+
+blockquote {
+    position: relative;
+    padding: 1rem 3rem 1rem 3.5rem;
+    margin: 0 2rem 1rem 2rem;
+    font-style: italic;
+    border-bottom-right-radius: 3rem;
+    box-shadow: 1rem 1rem 0.5rem 0 rgba(41,152,255,0.5);
+    background-color: $blockquote-background;
+    color: inherit;
+    cite {
+        display: block;
+        text-align: right;
+        background-color: transparent;
+        font-weight: 600;
+        color: $blue;
+    }
+    cite:before {
+        content: "\2014 \2009";
+    }
+}
+
+blockquote:before {
+    display: block;
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    content: open-quote;
+    font-size: 5rem;
+    background-color: transparent;
+    color: $blue;
+}
+
+abbr, acronym {
+    border-bottom: 1px dotted $darker-blue;
+}
+
+abbr[title], acronym[title] {
+    cursor: help;
 }

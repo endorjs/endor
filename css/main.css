@@ -262,40 +262,6 @@ article {
   color: #082136;
   border-radius: 3rem; }
 
-blockquote {
-  position: relative;
-  padding: 1rem 3rem 1rem 3.5rem;
-  margin: 0 1rem 1rem 1rem;
-  font-style: italic;
-  border-bottom-right-radius: 3rem;
-  box-shadow: 1rem 1rem 0.5rem 0 rgba(41, 152, 255, 0.5);
-  background-color: #b7b7b7;
-  color: inherit; }
-  blockquote cite {
-    display: block;
-    text-align: right;
-    background-color: transparent;
-    font-weight: 600;
-    color: #004b8d; }
-  blockquote cite:before {
-    content: "\2014 \2009"; }
-
-blockquote:before {
-  display: block;
-  position: absolute;
-  left: 0.5rem;
-  top: 0;
-  content: open-quote;
-  font-size: 5rem;
-  background-color: transparent;
-  color: #004b8d; }
-
-abbr, acronym {
-  border-bottom: 1px dotted #00294d; }
-
-abbr[title], acronym[title] {
-  cursor: help; }
-
 header, section {
   margin: 0;
   min-height: 82vh;
@@ -318,7 +284,6 @@ header, section {
     width: 50%;
     margin: auto;
     padding: 1rem 2rem;
-    background-color: lightgrey;
     border-bottom-right-radius: 2rem; }
   header .left, section .left {
     text-align: left; }
@@ -326,6 +291,9 @@ header, section {
     text-align: right; }
   header .center, section .center {
     text-align: center; }
+  header .bg-grey, section .bg-grey {
+    background-color: lightgrey;
+    color: inherit; }
 
 header {
   padding: 5rem; }
@@ -349,7 +317,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   color: #004b8d; }
 
-p, ol, ul, blockquote {
+p, ol, ul, figure {
   margin: 0 0 1rem 0; }
 
 ol {
@@ -407,7 +375,7 @@ figure {
   figure img {
     width: auto;
     height: auto;
-    max-height: 75vh;
+    max-width: 100%;
     overflow: auto; }
   figure figcaption {
     margin-top: 1rem;
@@ -416,6 +384,40 @@ figure {
     font-style: italic; }
   figure figcaption:before {
     content: "\2014 \2009"; }
+
+blockquote {
+  position: relative;
+  padding: 1rem 3rem 1rem 3.5rem;
+  margin: 0 2rem 1rem 2rem;
+  font-style: italic;
+  border-bottom-right-radius: 3rem;
+  box-shadow: 1rem 1rem 0.5rem 0 rgba(41, 152, 255, 0.5);
+  background-color: #b7b7b7;
+  color: inherit; }
+  blockquote cite {
+    display: block;
+    text-align: right;
+    background-color: transparent;
+    font-weight: 600;
+    color: #004b8d; }
+  blockquote cite:before {
+    content: "\2014 \2009"; }
+
+blockquote:before {
+  display: block;
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  content: open-quote;
+  font-size: 5rem;
+  background-color: transparent;
+  color: #004b8d; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #00294d; }
+
+abbr[title], acronym[title] {
+  cursor: help; }
 
 pre, code, kbd, var {
   font-size: 28px;
