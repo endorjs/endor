@@ -32,7 +32,7 @@ There are different ways to download endor.js:
   You can find all what you need to start your presentation under the `dist`
   directory.
 + From [GitHub as a direct download](https://github.com/endorjs/endor/archive/master.zip).
-+ Copy the structure of the [index_cdn.html](https://cdn.rawgit.com/endorjs/endor/0.5.2/dist/index_cdn.html)
++ Copy the structure of the [index_cdn.html](https://cdn.rawgit.com/endorjs/endor/0.5.3/dist/index_cdn.html)
   file, which links the corresponding dependencies from the CDN at [RawGit](https://rawgit.com/).
 
 ## Usage
