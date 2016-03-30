@@ -21,6 +21,12 @@ p, ol, ul, figure {
     margin: 0 0 1rem 0;
 }
 
+dl {
+    dt {
+        font-weight: 700;
+    }
+}
+
 ol {
     list-style-position: outside;
     padding-left: 2rem;

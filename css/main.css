@@ -320,6 +320,9 @@ h1, h2, h3, h4, h5, h6 {
 p, ol, ul, figure {
   margin: 0 0 1rem 0; }
 
+dl dt {
+  font-weight: 700; }
+
 ol {
   list-style-position: outside;
   padding-left: 2rem; }
@@ -433,7 +436,7 @@ h1 code, h1 kbd, h1 var, h2 code, h2 kbd, h2 var, h3 code, h3 kbd, h3 var, h4 co
 
 code.hljs {
   margin: 0.5rem;
-  padding: 0 0 0.5rem 0; }
+  padding: 0.5rem 1rem; }
 
 footer {
   height: 8vh;
