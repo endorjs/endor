@@ -1,0 +1,83 @@
+#overlay {
+  font-size: small;
+  position: fixed;
+  z-index: 200;
+  background-color: #67b5d1;
+  transition: left 0.3s;
+  left: -400px;
+  top: 0;
+  color: rgb(0, 0, 0);
+  background-color: rgba(100, 180, 200, 0.9);
+  width: 500px;
+  height: 100%;
+  overflow: scroll;
+  border-right: thin solid black;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#overlay.active-menu {
+  left: 0;
+}
+#overlay.active-menu + .menu-mask {
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+#overlay + .menu-mask {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity .3s,width 0s .3s,height 0s .3s;
+}
+
+#overlay .button-open-menu,
+#overlay .button-close-menu {
+  padding: 12px 24px;
+  width: 100%;
+  color: #fff;
+  background-color: #3184a1;
+  border: none;
+  cursor: pointer;
+}
+
+#overlay .button-open-menu {
+  display: block;
+  text-align: right;
+}
+
+#overlay.active-menu .button-open-menu {
+  display: none;
+}
+
+#overlay .button-close-menu {
+  display: none;
+  text-align: left;
+}
+
+#overlay.active-menu .button-close-menu {
+  display: block;
+}
+
+#overlay .menu-list {
+  list-style: decimal;
+  margin: 0;
+  padding: 0;
+}
+
+#overlay .menu-list .menu-list-item {
+  display: block;
+  border-top: solid 1px #b5dbe9;
+  border-bottom: solid 1px #3184a1;
+}
+
+#overlay .menu-list .menu-list-item .menu-link {
+  display: block;
+  padding: 12px 24px;
+  color: rgb(255, 255, 255);
+}

@@ -96,25 +96,56 @@
         });
     }
 
-  document.addEventListener('DOMContentLoaded', addDropDownMenu)
+  document.addEventListener('DOMContentLoaded', addOverlayWithMenu)
 
-  function addDropDownMenu()
+  function addOverlayWithMenu()
   {
-    var footer = document.querySelector('footer');
-    var select = document.createElement('select');
-    select.addEventListener('change', function ()
-    {
-      location.href = '#' + select.selectedIndex;
-    })
-    select.add(new Option('Start', 'Start'));
-    var slides = Array.prototype.slice.call(document.getElementsByTagName('section'));
-    slides.forEach(function (slide)
-    {
-      var option = new Option(slide.querySelector('h2').textContent, slide.querySelector('h2').textContent);
-      select.add(option);
+    var overlay = document.createElement('nav');
+    overlay.id = 'overlay';
+    function openOverlayMenu() {
+      overlay.classList.add('active-menu');
+    }
+    function closeOverlayMenu() {
+      overlay.classList.remove('active-menu');
+    }
+    var mask = document.createElement('div');
+    mask.classList.add('menu-mask');
+    mask.addEventListener('click', function() {
+      console.log("close")
+      closeOverlayMenu();
     });
-    select.selectedIndex = 0;
-    footer.appendChild(select);
-    console.log(slides.length);
+    var buttonOpenMenu = document.createElement('button');
+    buttonOpenMenu.classList.add('button-open-menu');
+    buttonOpenMenu.textContent = 'Open menu';
+    buttonOpenMenu.addEventListener('click', function() {
+      openOverlayMenu();
+    });
+    overlay.appendChild(buttonOpenMenu);
+    var buttonCloseMenu = document.createElement('button');
+    buttonCloseMenu.classList.add('button-close-menu');
+    buttonCloseMenu.textContent = 'Close menu';
+    buttonCloseMenu.addEventListener('click', function() {
+      closeOverlayMenu();
+    });
+    overlay.appendChild(buttonCloseMenu);
+    console.log("addDropDownMenu");
+    var list = document.createElement('ol');
+    list.classList.add('menu-list');
+    overlay.appendChild(list);
+    var footer = document.querySelector('footer');
+    var slides = Array.prototype.slice.call(document.getElementsByTagName('section'));
+    slides.forEach(function (slide, index)
+    {
+      var listItem = document.createElement('li');
+      listItem.classList.add('menu-list-item');
+      var link = document.createElement('a');
+      link.classList.add('menu-link');
+      link.href = '#' + (index + 1);
+      link.textContent = slide.querySelector('h2').textContent;
+      listItem.appendChild(link);
+      list.appendChild(listItem);
+    });
+    footer.appendChild(overlay);
+    footer.appendChild(mask);
   }
 })();
