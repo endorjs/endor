@@ -1,3 +1,9 @@
-@import url($base-font-type-body-url);
-@import url($base-font-type-code-url);
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+// Font types
+$base-font-type-body: "Open Sans";
+$base-font-type-code: "Source Code Pro";
+$base-font-awesome: "../font-awesome/css/font-awesome.min.css";
+
+// Font imports
+@import "fonts/open-sans";
+@import "fonts/source-code-pro";
+@import url($base-font-awesome);

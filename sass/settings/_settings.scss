@@ -5,21 +5,13 @@ $darker-blue: #00294d;
 $blue: #004b8d;
 $lighter-blue: #0068c4;
 $lightest-blue: #2998ff;
-$grey: #dcdcdc;
+$theme-grey: #b7b7b7;
+$code-background: $theme-grey;
+$blockquote-background: $theme-grey;
 
 // Base font
 $base-font-size: 16px;
 $base-font-weight: 400;
-
-// Font types
-$google-fonts-url: "https://fonts.googleapis.com/css?";
-$base-font-type-body-url: $google-fonts-url +
-    "family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700,800,800italic&" +
-    "subset=latin,latin-ext";
-$base-font-type-code-url: $google-fonts-url +
-    "family=Source+Code+Pro:400,200,300,500,600,700,900&subset=latin,latin-ext";
-$base-font-type-body: "Open Sans";
-$base-font-type-code: "Source Code Pro";
 
 // Sizes
 $presentation-width: 100%;
@@ -34,6 +26,8 @@ $slide-padding: 1rem 3rem;
 $slide-font-size: 1.75 * $base-font-size;
 $slide-h1-font-size: 4 * $base-font-size;
 $slide-h2-font-size: 3 * $base-font-size;
+$slide-h1-font-weight: 600;
+$slide-h2-font-weight: 600;
 $slide-title-border: 1px solid $darker-blue;
 
 // Title slide

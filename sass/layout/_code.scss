@@ -1,3 +1,6 @@
+// Code highlight
+@import url($code-theme);
+
 pre, code, kbd, var {
     font-size: $code-font-size;
     font-weight: $base-font-weight;
@@ -5,5 +8,16 @@ pre, code, kbd, var {
     font-family: $base-font-type-code, courier, monospace;
 }
 
-// Code highlight
-@import url($code-theme);
+h1, h2, h3, h4, h5, h6, p, li {
+    code, kbd, var {
+        font-size: inherit;
+        background-color: $code-background;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+}
+
+code.hljs {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+}
