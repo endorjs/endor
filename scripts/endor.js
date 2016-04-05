@@ -77,4 +77,30 @@
         }
         return h;
     }
+
+
+    document.addEventListener('DOMContentLoaded', addDropDownMenu)
+
+    function addDropDownMenu() {
+        var footer = document.querySelector('footer');
+        var select = document.createElement('select');
+        select.addEventListener('change', function() {
+            location.href = '#' + select.selectedIndex;
+        })
+        select.add(new Option(
+            'Start',
+            'Start'
+        ));
+        var slides = Array.prototype.slice.call(document.getElementsByTagName('section'));
+        slides.forEach(function(slide) {
+            var option = new Option(
+                slide.querySelector('h2').textContent,
+                slide.querySelector('h2').textContent
+            );
+            select.add(option);
+        });
+        select.selectedIndex = 0;
+        footer.appendChild(select);
+        console.log(slides.length);
+    }
 })();
