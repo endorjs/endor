@@ -135,29 +135,23 @@
     var slides = Array.prototype.slice.call(document.getElementsByTagName('section'));
     slides.forEach(function (slide, index)
     {
+      var listItem = document.createElement('li');
+      listItem.classList.add('menu-list-item');
+      var linkText = '';
       var mainHeadline = slide.querySelector('h1');
       if(mainHeadline) {
-        var listItem = document.createElement('li');
-        listItem.classList.add('menu-list-item');
+        linkText = mainHeadline.textContent;
         listItem.classList.add('menu-list-main-item');
-        var link = document.createElement('a');
-        link.classList.add('menu-link');
-        link.href = '#' + (index + 1);
-        link.textContent = mainHeadline.textContent;
-        listItem.appendChild(link);
-        list.appendChild(listItem);
+      } else {
+        var subHeadline = slide.querySelector('h2');
+        linkText = subHeadline.textContent;
       }
-      var subHeadline = slide.querySelector('h2');
-      if(subHeadline) {
-        var listItem = document.createElement('li');
-        listItem.classList.add('menu-list-item');
-        var link = document.createElement('a');
-        link.classList.add('menu-link');
-        link.href = '#' + (index + 1);
-        link.textContent = subHeadline.textContent;
-        listItem.appendChild(link);
-        list.appendChild(listItem);
-      }
+      var link = document.createElement('a');
+      link.classList.add('menu-link');
+      link.href = '#' + (index + 1);
+      link.textContent = linkText;
+      listItem.appendChild(link);
+      list.appendChild(listItem);
     });
     footer.appendChild(overlay);
     footer.appendChild(mask);
