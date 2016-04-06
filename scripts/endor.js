@@ -111,19 +111,18 @@
     var mask = document.createElement('div');
     mask.classList.add('menu-mask');
     mask.addEventListener('click', function() {
-      console.log("close")
       closeOverlayMenu();
     });
     var buttonOpenMenu = document.createElement('button');
     buttonOpenMenu.classList.add('button-open-menu');
-    buttonOpenMenu.textContent = 'Open menu';
+    buttonOpenMenu.textContent = '>';
     buttonOpenMenu.addEventListener('click', function() {
       openOverlayMenu();
     });
     overlay.appendChild(buttonOpenMenu);
     var buttonCloseMenu = document.createElement('button');
     buttonCloseMenu.classList.add('button-close-menu');
-    buttonCloseMenu.textContent = 'Close menu';
+    buttonCloseMenu.textContent = 'Close ToC';
     buttonCloseMenu.addEventListener('click', function() {
       closeOverlayMenu();
     });
