@@ -84,6 +84,9 @@
   border-bottom: solid 1px rgb(49, 132, 161);
 }
 
+#overlay.active-menu .menu-list .menu-list-item.active-menu-list-item {
+  border: thick solid rgb(255, 255, 255);
+}
 
 #overlay.active-menu .menu-list .menu-list-item .menu-link {
   color: rgb(255, 255, 255);
