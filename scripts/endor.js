@@ -147,14 +147,17 @@
         listItem.appendChild(link);
         list.appendChild(listItem);
       }
-      var listItem = document.createElement('li');
-      listItem.classList.add('menu-list-item');
-      var link = document.createElement('a');
-      link.classList.add('menu-link');
-      link.href = '#' + (index + 1);
-      link.textContent = slide.querySelector('h2').textContent;
-      listItem.appendChild(link);
-      list.appendChild(listItem);
+      var subHeadline = slide.querySelector('h2');
+      if(subHeadline) {
+        var listItem = document.createElement('li');
+        listItem.classList.add('menu-list-item');
+        var link = document.createElement('a');
+        link.classList.add('menu-link');
+        link.href = '#' + (index + 1);
+        link.textContent = subHeadline.textContent;
+        listItem.appendChild(link);
+        list.appendChild(listItem);
+      }
     });
     footer.appendChild(overlay);
     footer.appendChild(mask);
