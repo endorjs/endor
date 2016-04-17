@@ -8,16 +8,21 @@ pre, code, kbd, var {
     font-family: $base-font-type-code, courier, monospace;
 }
 
-h1, h2, h3, h4, h5, h6, p, li {
+h1, h2, h3, h4, h5, h6,
+    p, pre, ol, ul, li, dl, table, figure, div {
     code, kbd, var {
         font-size: inherit;
         background-color: $code-background;
-        padding-left: 0.25rem;
-        padding-right: 0.25rem;
+        margin: 0;
+        padding-left: 0.125rem;
+        padding-right: 0.125rem;
     }
 }
 
-code.hljs {
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
+table tr, table td {
+    code.hljs {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: inherit;
+    }
 }

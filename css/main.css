@@ -301,6 +301,93 @@ header {
 section {
   padding: 1rem 3rem; }
 
+#overlay {
+  font-size: small;
+  position: fixed;
+  z-index: 200;
+  transition: left 0.3s;
+  left: -450px;
+  top: 0;
+  color: black;
+  width: 500px;
+  height: 100%;
+  background-color: rgba(100, 180, 200, 0.9);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-right: thin solid black; }
+
+#overlay.active-menu {
+  left: 0;
+  overflow: scroll; }
+
+#overlay.active-menu + .menu-mask {
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s; }
+
+#overlay + .menu-mask {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: black;
+  opacity: 0;
+  transition: opacity .3s, width 0s .3s, height 0s .3s; }
+
+#overlay .button-open-menu,
+#overlay .button-close-menu {
+  padding: 12px 24px;
+  width: 100%;
+  color: #fff;
+  background-color: #3184a1;
+  border: none;
+  cursor: pointer; }
+
+#overlay .button-open-menu {
+  display: block;
+  text-align: right; }
+
+#overlay.active-menu .button-open-menu {
+  display: none; }
+
+#overlay .button-close-menu {
+  display: none;
+  text-align: left; }
+
+#overlay.active-menu .button-close-menu {
+  display: block; }
+
+#overlay .menu-list {
+  list-style: decimal;
+  margin: 0;
+  padding: 0; }
+
+#overlay .menu-list .menu-list-item {
+  display: block; }
+
+#overlay.active-menu .menu-list .menu-list-main-item {
+  display: block;
+  background-color: #3c8ca0; }
+
+#overlay.active-menu .menu-list .menu-list-item {
+  border-top: solid 1px #b5dbe9;
+  border-bottom: solid 1px #3184a1; }
+
+#overlay.active-menu .menu-list .menu-list-item.active-menu-list-item {
+  border: thick solid white; }
+
+#overlay.active-menu .menu-list .menu-list-item .menu-link {
+  color: white;
+  opacity: 1; }
+
+#overlay .menu-list .menu-list-item .menu-link {
+  display: block;
+  padding: 12px 24px;
+  opacity: 0; }
+
 h1 {
   font-size: 64px;
   font-weight: 600; }
@@ -317,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   color: #004b8d; }
 
-p, ol, ul, figure {
+p, pre, ol, ul, dl, table, figure, div {
   margin: 0 0 1rem 0; }
 
 dl dt {
@@ -416,6 +503,32 @@ blockquote:before {
   background-color: transparent;
   color: #004b8d; }
 
+table {
+  width: 100%;
+  padding: 0;
+  border-collapse: collapse; }
+  table thead, table tbody, table tfoot, table tr, table th, table td {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 24px; }
+  table thead tr th {
+    padding: 0.125rem 0.5rem;
+    background-color: #00294d;
+    color: #fff;
+    border-left: 1px solid #fff; }
+  table thead tr th:last-child {
+    border-right: 1px solid #fff; }
+  table tbody tr {
+    border-bottom: 1px solid #0068c4; }
+    table tbody tr th, table tbody tr td {
+      padding: 0.125rem 0.25rem; }
+      table tbody tr th dl, table tbody tr th ol, table tbody tr th ul, table tbody tr th pre, table tbody tr td dl, table tbody tr td ol, table tbody tr td ul, table tbody tr td pre {
+        margin: 0; }
+  table tbody tr:nth-child(even) {
+    background-color: #b7b7b7;
+    color: inherit; }
+
 abbr, acronym {
   border-bottom: 1px dotted #00294d; }
 
@@ -428,15 +541,20 @@ pre, code, kbd, var {
   font-style: normal;
   font-family: "Source Code Pro", courier, monospace; }
 
-h1 code, h1 kbd, h1 var, h2 code, h2 kbd, h2 var, h3 code, h3 kbd, h3 var, h4 code, h4 kbd, h4 var, h5 code, h5 kbd, h5 var, h6 code, h6 kbd, h6 var, p code, p kbd, p var, li code, li kbd, li var {
+h1 code, h1 kbd, h1 var, h2 code, h2 kbd, h2 var, h3 code, h3 kbd, h3 var, h4 code, h4 kbd, h4 var, h5 code, h5 kbd, h5 var, h6 code, h6 kbd, h6 var,
+p code,
+p kbd,
+p var, pre code, pre kbd, pre var, ol code, ol kbd, ol var, ul code, ul kbd, ul var, li code, li kbd, li var, dl code, dl kbd, dl var, table code, table kbd, table var, figure code, figure kbd, figure var, div code, div kbd, div var {
   font-size: inherit;
   background-color: #b7b7b7;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem; }
+  margin: 0;
+  padding-left: 0.125rem;
+  padding-right: 0.125rem; }
 
-code.hljs {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem; }
+table tr code.hljs, table td code.hljs {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit; }
 
 footer {
   height: 8vh;

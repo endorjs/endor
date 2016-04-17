@@ -102,7 +102,40 @@
             </blockquote>
         </section>
         <section>
-            <h2>(Sample code) Slide #6</h2>
+            <h2>(Cool tables) Slide #6</h2>
+            <p>This is a table.</p>
+            <table>
+                <thead>
+                <tr>
+                    <th>Operation</th>
+                    <th>HTTP method</th>
+                    <th>URI example</th>
+                    <th>HTTP response code</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Create</td>
+                    <td>POST</td>
+                    <td><pre class="http"><code>/orders</code></pre></td>
+                    <td>201 Created<br>
+                        Content-Type header<br>
+                        Location header<br>
+                        Response body (optional)</td>
+                </tr>
+                <tr>
+                    <td>Read</td>
+                    <td>GET</td>
+                    <td><pre class="http"><code>/orders/{id}</code></pre></td>
+                    <td>200 OK<br>
+                        Content-Type header<br>
+                        Response body</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>(Sample code) Slide #7</h2>
             <p>Inline highlighted code fragments and within <code>&lt;pre></code> fragments:</p>
             <pre class="html"><code>&lt;!doctype html>
 &lt;html lang=&quot;en&quot;>
@@ -118,9 +151,9 @@
 &lt;/html></code></pre>
         </section>
         <section>
-            <h2>(Image) Slide #7</h2>
+            <h2>(Image) Slide #8</h2>
             <figure>
-                <img src="https://cdn.rawgit.com/endorjs/endor/0.5.3/dist/images/Da_Vinci_Vitruve_Luc_Viatour.jpg"
+                <img src="images/Da_Vinci_Vitruve_Luc_Viatour.jpg"
                      alt="Leonardo da Vinci Vitruvian Man">
                 <figcaption title="Leonardo da Vinci [Public domain], via Wikimedia Commons">Leonardo da Vinci Vitruvian Man</figcaption>
             </figure>
