@@ -4,7 +4,7 @@
 /* 75em */
 /* latin-ext */
 @import url("../font-awesome/css/font-awesome.min.css");
-@import url("../highlight/styles/darkula.css");
+@import url("../highlight/styles/github.css");
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
